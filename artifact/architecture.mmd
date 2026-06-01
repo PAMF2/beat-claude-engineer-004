@@ -1,0 +1,16 @@
+flowchart LR
+  SDK[Existing JS SDK] --> Edge[CloudFront + ALB ingest API]
+  Edge --> Auth[Tenant auth, schema normalize, idempotency key]
+  Auth --> KDS[Kinesis Data Streams provisioned]
+  KDS --> Raw[Firehose to S3 raw events by tenant_bucket/date/hour]
+  KDS --> Realtime[ECS KCL 3.x enhanced fan-out consumers]
+  Realtime --> Redis[ElastiCache Redis hot user state + segment counters]
+  Realtime --> Metrics[Aggregated dashboard store]
+  Realtime --> DLQ[SQS DLQ for poison events]
+  Redis --> Rules[Personalization rule evaluator]
+  Metrics --> API[Dashboard API]
+  Raw --> Athena[Athena/Glue historical analysis]
+  Raw --> Export[Customer exports to Snowflake/BigQuery]
+  Postgres[(PostgreSQL metadata)]
+  Postgres --> Auth
+  Postgres --> Rules

@@ -1,0 +1,12 @@
+{
+  "name": "engineer-004-realtime-analytics-prototype",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "capacity": "node artifact/capacity_model.js",
+    "reconcile": "node artifact/reconciliation_sim.js",
+    "prototype": "node prototype/demo.js",
+    "test": "node --test prototype/*.test.js"
+  }
+}

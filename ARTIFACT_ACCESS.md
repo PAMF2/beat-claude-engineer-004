@@ -6,9 +6,10 @@ No login or private data is required. All artifacts use public AWS documentation
 
 1. Read `submission_final.md`.
 2. Open `artifact/architecture.mmd`.
-3. Inspect `infra/terraform/`.
-4. Run the local evidence commands below.
-5. Review `artifact/validation_plan.md` and `artifact/operational_runbook.md`.
+3. Review `artifact/evidence_log.md`.
+4. Inspect `infra/terraform/`.
+5. Run the local evidence commands below.
+6. Review `artifact/validation_plan.md` and `artifact/operational_runbook.md`.
 
 ## Local Evidence Commands
 

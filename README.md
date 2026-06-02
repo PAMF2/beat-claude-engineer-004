@@ -12,6 +12,7 @@ Files:
 - `artifact/reconciliation_sim.js`: executable synthetic reconciliation check for dedupe, late events, DLQ, and segment counting.
 - `artifact/architecture.mmd`: standalone Mermaid architecture diagram.
 - `artifact/adr-001-streaming-core.md`: architecture decision record for the streaming core.
+- `artifact/evidence_log.md`: command/result evidence log for local validation.
 - `artifact/validation_plan.md`: operating validation plan for migration and rollout.
 - `prototype/`: dependency-free Node prototype for ingest, processing, segment state, and reconciliation.
 

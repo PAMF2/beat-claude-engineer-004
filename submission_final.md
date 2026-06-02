@@ -9,6 +9,7 @@ Artifacts:
 - `infra/terraform/`: validated Terraform for the AWS ingestion core.
 - `artifact/architecture.mmd`: standalone Mermaid diagram.
 - `artifact/capacity_model.js`: executable shard/cost model.
+- `artifact/evidence_log.md`: local command/result evidence.
 - `artifact/validation_plan.md`: rollout release gates.
 - `artifact/operational_runbook.md`: incidents, rollback, deletion.
 - `prototype/`: local contract tests for dedupe, segment state, and reconciliation.
